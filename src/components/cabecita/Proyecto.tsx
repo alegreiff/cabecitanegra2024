@@ -33,10 +33,12 @@ export const Proyecto = ({ codigo }: Props) => {
   return (
     <>
       <div className="bg-pink-800 h-auto w-full p-4">
-        <button onClick={() => setidioma("en")}>Inglés</button>
-        <button onClick={() => setidioma("es")}>Español</button>
-        {langContent && <h2>{langContent.nombre}</h2>}
-        {film?.poster && <img src={`posteres/${codigo}po.jpg`} />}
+        {langContent && (
+          <h2 className="text-slate-200 text-3xl font-bold pb-4">
+            {langContent.nombre}
+          </h2>
+        )}
+        {film?.poster && <img src={`./posteres/${codigo}po.jpg`} />}
 
         {/* <h2>{codigo}</h2>
 
