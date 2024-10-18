@@ -1,0 +1,19 @@
+---
+import { Base } from "@/components/Base";
+import { SelectProyecto } from "@/components/cabecita/SelectProyecto";
+
+import MainLayout from "@/layout/MainLayout.astro";
+
+let nombreProy = "GATTO";
+const nombreProyecto = (proyecto: string) => {
+  nombreProy = proyecto;
+
+}
+
+---
+
+
+<MainLayout>
+  <Base client:idle/>
+<SelectProyecto client:idle />
+</MainLayout>
