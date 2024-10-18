@@ -16,6 +16,7 @@ export const Proyecto = ({ codigo }: Props) => {
   useEffect(() => {
     setPelicula(codigo);
   }, [codigo]);
+
   useEffect(() => {
     if (film) {
       if (idioma === "en") {
@@ -38,7 +39,7 @@ export const Proyecto = ({ codigo }: Props) => {
             {langContent.nombre}
           </h2>
         )}
-        {film?.poster && <img src={`./posteres/${codigo}po.jpg`} />}
+        {film?.poster && <img src={`/posteres/${codigo}po.jpg`} />}
 
         {/* <h2>{codigo}</h2>
 
