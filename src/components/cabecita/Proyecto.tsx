@@ -19,13 +19,14 @@ export const Proyecto = ({ codigo }: Props) => {
 
   useEffect(() => {
     if (film) {
+      setLangContent(null);
       if (idioma === "en") {
         setLangContent(film?.en);
       } else {
         setLangContent(film?.es);
       }
     }
-  }, [idioma, film]);
+  }, [idioma, film, codigo]);
 
   if (!langContent) {
     return;
@@ -33,18 +34,23 @@ export const Proyecto = ({ codigo }: Props) => {
 
   return (
     <>
-      <div className="bg-pink-800 h-auto w-full p-4">
-        {langContent && (
-          <h2 className="text-slate-200 text-3xl font-bold pb-4">
-            {langContent.nombre}
-          </h2>
-        )}
-        {film?.poster && <img src={`/posteres/${codigo}po.jpg`} />}
-
-        {/* <h2>{codigo}</h2>
-
-        {idioma === "en" ? film?.en?.sinopsis : film?.es?.sinopsis}
-        {JSON.stringify(langContent, null, 2)} */}
+      <div className="h-auto w-full p-4  ">
+        <h2 className="text-slate-200 text-3xl font-bold pb-4">
+          {langContent.nombre} -- ( {codigo} )
+        </h2>
+        <div className="lg:flex">
+          {film?.poster ? (
+            <img
+              alt="imagos"
+              src={`/posteres/${codigo}po.jpg`}
+              className="aspect[320/457] object-contain self-start"
+            />
+          ) : null}
+          <div
+            className="pl-4"
+            dangerouslySetInnerHTML={{ __html: langContent.sinopsis }}
+          ></div>
+        </div>
       </div>
     </>
   );

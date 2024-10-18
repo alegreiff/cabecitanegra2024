@@ -556,7 +556,7 @@ export const contenidos: Peliculas[] = [
     id: 15,
     desarrollo: 2,
     slug: "anuncio",
-    poster: false,
+    poster: true,
     guion: "Alfonso Acosta y Carolina Mosquera",
     director: "Alfonso Acosta",
 
