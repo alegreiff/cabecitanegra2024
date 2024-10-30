@@ -399,10 +399,11 @@ export const contenidos: Peliculas[] = [
     id: 7,
     desarrollo: 1,
     slug: "karol",
-    poster: false,
+    poster: true,
     guion: "Alfonso Acosta",
     director: "Alfonso Acosta",
     productor: "Carolina Mosquera CON Juana Soto Dávila",
+    year: 2024,
 
     es: {
       nombre: "Karol, la reina vampira",
@@ -415,6 +416,7 @@ export const contenidos: Peliculas[] = [
       `,
       premios:
         "Ganador de estímulo Realización de cortometraje infantil del FDC 2021",
+        duracion: `12'34''`,
     },
     en: {
       nombre: "Karol, The Vampire Queen",
@@ -432,6 +434,7 @@ export const contenidos: Peliculas[] = [
       `, */
       premios:
         "Ganador de estímulo Realización de cortometraje infantil del FDC 2021",
+        duracion: `12'34''`,
     },
   },
   {
@@ -536,7 +539,7 @@ export const contenidos: Peliculas[] = [
     ideaoriginal: "Carolina Mosquera",
 
     es: {
-      nombre: "Señoritas: la vida color rosa",
+      nombre: "Señoritas",
       temas: "",
       tipo: "Largometraje documental",
       sinopsis: `Fucsia, rosa, rosa pálido, rosa pastel, millenial pink, todos tonos de rojo blanqueado protagonista de múltiples ficciones sobre la feminidad.<br /><br />
@@ -544,7 +547,7 @@ export const contenidos: Peliculas[] = [
       `,
     },
     en: {
-      nombre: "Life inpink",
+      nombre: "Señoritas",
       temas: "",
       tipo: "Largometraje documental",
       sinopsis: `Fuchsia, pink, pale pink, pastel pink, millenial pink, all shades of bleached red, protagonist of multiple fictions about femininity.<br /><br />
@@ -562,16 +565,16 @@ export const contenidos: Peliculas[] = [
 
     es: {
       nombre: "La anunciación",
-      temas: "Horror cósmico / Body Horror / Latinx",
+      temas: "Horror cósmico / Body Horror / Latino",
       tipo: "Largometraje",
-      sinopsis: `Tres momentos cercanos en el tiempo. Tres lugares: Bogotá, NY y el desierto mexicano cercano a la frontera inventada por los hombres. Tres personas diferentes en una sola entidad invocada. Tres lugares unidos por una línea cósmica de acontecimientos que anunciarán el despertar de los profetas de un nuevo antiguo mundo y la destrucción del anterior... nuestro mundo.
+      sinopsis: `La metamorfosis a diosa de una joven asesinada en una casona de un olvidado barrio de Bogotá, el sacrificio de una actriz inmigrante durante una obra de teatro blasfema en NY y el despertar de una entidad en el desierto mexicano que se encarna en el cuerpo de una celebridad decadente serán los primeros anuncios del fin de los tiempos y del renacimiento de los dioses antiguos.   
       `,
     },
     en: {
       nombre: "The annunciation",
-      temas: "Cosmic Horror/ Body Horror / Latinx",
+      temas: "Cosmic Horror / Body Horror / Latino",
       tipo: "Feature film",
-      sinopsis: `Three moments close in time. Three places: Bogota, NY and the Mexican desert near the border invented by men. Three different people in a single invoked entity. Three places united by a cosmic line of events that will announce the awakening of the prophets of a new ancient world and the destruction of the previous one... ours.
+      sinopsis: `The metamorphosis into a goddess of a young woman murdered in a ruinous mansion in a forgotten neighborhood of Bogotá, the sacrifice of an immigrant actress during a blasphemous theatre performance play in NY and the awakening of an entity in the Mexican desert that incarnates itself in the body of a decadent celebrity will be the first announcements of the end of time and the rebirth of the ancient gods.   
       `,
     },
   },

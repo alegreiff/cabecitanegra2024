@@ -5,19 +5,7 @@ interface idiomaState {
   setidioma: (idioma: string) => void;
 }
 
-const useIdiomaStore = create<idiomaState>((set) => ({
+export const useIdiomaStore = create<idiomaState>((set) => ({
   idioma: 'es',
-  setidioma: (idioma: string) => set({ idioma }),
+  setidioma: (idioma: string) => set({ idioma })
 }));
-
-
-
-
-
-
-
-
-
-
-export default useIdiomaStore;
-

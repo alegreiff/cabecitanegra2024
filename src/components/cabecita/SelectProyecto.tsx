@@ -1,7 +1,7 @@
 import { Proyecto } from "@/components/cabecita/Proyecto";
 import { useState } from "react";
 import { NombrePelicula } from "./NombrePelicula";
-import useIdiomaStore from "@/stores/idioma";
+import { useIdiomaStore } from "@/stores/idioma";
 
 export const SelectProyecto = () => {
   const [proyecto, setProyecto] = useState("");

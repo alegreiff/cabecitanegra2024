@@ -1,5 +1,6 @@
 ---
-
+import '@fontsource-variable/oswald';
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <html lang="es">
@@ -9,8 +10,18 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+		<ViewTransitions />
 	</head>
-	<body class="bg-slate-800 h-lvh text-slate-100">
+	<body class="bg-indigo-950 h-lvh text-slate-100">
+		<a href="/"><img src="/logoinv.png"	 alt="Cabecita Negra Producciones LOGO" 
+			class="absolute top-8 left-8 h-24"></a>
 		<slot />
 	</body>
 </html>
+<style is:global>
+
+body {
+	font-family: 'Oswald Variable', sans-serif;
+}
+
+</style>

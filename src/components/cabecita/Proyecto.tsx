@@ -1,4 +1,5 @@
-import useIdiomaStore from "@/stores/idioma";
+import useAyudas from "@/hooks/useAyudas";
+import { useIdiomaStore } from "@/stores/idioma";
 import usePeliculaStore from "@/stores/peliculastore";
 import type { Peliculas } from "@/stores/proyectos";
 import { useEffect, useState } from "react";
@@ -9,8 +10,12 @@ interface Props {
 }
 
 export const Proyecto = ({ codigo }: Props) => {
+  const { desarrollo, productor, director, coproductor, agenteventas } =
+    useAyudas();
   const { pelicula: film, setPelicula } = usePeliculaStore();
-  const { idioma, setidioma } = useIdiomaStore();
+  const idioma = useIdiomaStore((lan) => lan.idioma);
+  console.log("MI IDIOMA ES: ", idioma);
+  //const { idioma } = useIdiomaStore();
   const [currentFilm, setCurrentFilm] = useState<Peliculas>({} as Peliculas);
   const [langContent, setLangContent] = useState(null as any);
   useEffect(() => {
@@ -34,22 +39,40 @@ export const Proyecto = ({ codigo }: Props) => {
 
   return (
     <>
-      <div className="h-auto w-full p-4  ">
-        <h2 className="text-slate-200 text-3xl font-bold pb-4">
-          {langContent.nombre} -- ( {codigo} )
+      <div className="h-auto w-full p-4">
+        <h2 className="text-red-500 text-3xl font-bold pb-4">
+          {langContent.nombre}
         </h2>
-        <div className="lg:flex">
+
+        <div className="lg:flex gap-8">
           {film?.poster ? (
             <img
-              alt="imagos"
+              alt={langContent.nombre}
               src={`/posteres/${codigo}po.jpg`}
               className="aspect[320/457] object-contain self-start"
             />
           ) : null}
-          <div
-            className="pl-4"
-            dangerouslySetInnerHTML={{ __html: langContent.sinopsis }}
-          ></div>
+
+          <div className="p-4 bg-indigo-900/50">
+            <h4> {desarrollo(codigo)} </h4>
+            <span> {film?.year} </span>
+            <p>{langContent.temas}</p>
+            <p> {langContent.duracion} </p>
+            {film?.cast && (
+              <p>
+                {idioma === "es" ? "Reparto:" : "Cast:"} {film?.cast}
+              </p>
+            )}
+            <p>{director(codigo)}</p>
+            <p>{productor(codigo)}</p>
+            <p>{coproductor(codigo)}</p>
+            <p>{agenteventas(codigo)}</p>
+
+            <div
+              className="mt-8 "
+              dangerouslySetInnerHTML={{ __html: langContent.sinopsis }}
+            ></div>
+          </div>
         </div>
       </div>
     </>
