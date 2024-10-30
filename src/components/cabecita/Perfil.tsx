@@ -8,7 +8,7 @@ export default function Perfil({ persona }: Props) {
   const idioma = useIdiomaStore((lan) => lan.idioma);
   return (
     <>
-      <div className="flex gap-8 flex-col w-1/2">
+      <div className="flex gap-8 flex-col md:w-1/2">
         <div>
           <img
             src={persona.img}
