@@ -9,6 +9,7 @@ export default function MenuNav({ ruta }: Props) {
 
   return (
     <div className="pt-20 h-auto  flex justify-center gap-8">
+      {ruta} -- {rutaLimpia}
       <a
         href="/proyectos"
         className={
