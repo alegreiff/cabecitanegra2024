@@ -31,6 +31,9 @@ function useAyudas() {
     }
     return `${idioma == "es" ? "Productor:" : "Producer:" } ${productor}`  ;
   }
+
+
+  
   const director = (id:number) => {
     const director = contenidos.find((p) => p.id === id)?.director || "";
     if( !director ) {
@@ -47,13 +50,21 @@ function useAyudas() {
     return `${idioma == "es" ? "Agente de ventas:" : "Sales agent:" } ${agenteventas}`  ;
   }
   
+  const protagonista = (id:number) => {
+    const protagonista = contenidos.find((p) => p.id === id)?.protagonista || "";
+    if( !protagonista ) {
+      return ""
+    }
+    return `${idioma == "es" ? "Protagonizado por:" : "Star:" } ${protagonista}`  ;
+  }
 
 
+  
   return {
     desarrollo,
     productor,
     director,
-    coproductor, agenteventas
+    coproductor, agenteventas, protagonista
   }
 
 

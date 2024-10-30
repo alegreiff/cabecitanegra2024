@@ -10,8 +10,14 @@ interface Props {
 }
 
 export const Proyecto = ({ codigo }: Props) => {
-  const { desarrollo, productor, director, coproductor, agenteventas } =
-    useAyudas();
+  const {
+    desarrollo,
+    productor,
+    director,
+    coproductor,
+    agenteventas,
+    protagonista,
+  } = useAyudas();
   const { pelicula: film, setPelicula } = usePeliculaStore();
   const idioma = useIdiomaStore((lan) => lan.idioma);
   console.log("MI IDIOMA ES: ", idioma);
@@ -56,6 +62,7 @@ export const Proyecto = ({ codigo }: Props) => {
           <div className="p-4 bg-indigo-900/50">
             <h4> {desarrollo(codigo)} </h4>
             <span> {film?.year} </span>
+
             <p>{langContent.temas}</p>
             <p> {langContent.duracion} </p>
             {film?.cast && (
@@ -65,6 +72,7 @@ export const Proyecto = ({ codigo }: Props) => {
             )}
             <p>{director(codigo)}</p>
             <p>{productor(codigo)}</p>
+            <p>{protagonista(codigo)}</p>
             <p>{coproductor(codigo)}</p>
             <p>{agenteventas(codigo)}</p>
 
@@ -72,8 +80,24 @@ export const Proyecto = ({ codigo }: Props) => {
               className="mt-8 "
               dangerouslySetInnerHTML={{ __html: langContent.sinopsis }}
             ></div>
+            {langContent.premios && (
+              <div
+                className="bg-indigo-800/40 p-8 h-auto mt-8"
+                dangerouslySetInnerHTML={{ __html: langContent.premios }}
+              ></div>
+            )}
           </div>
         </div>
+        {film?.trailer && (
+          <div>
+            <iframe
+              src={`https://player.vimeo.com/video/${film?.trailer}`}
+              width="640"
+              height="360"
+              allow="autoplay; fullscreen"
+            ></iframe>
+          </div>
+        )}
       </div>
     </>
   );

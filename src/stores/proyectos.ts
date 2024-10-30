@@ -11,6 +11,7 @@ export interface Peliculas {
   productor?: string;
   coproductor?: string;
   agenteventas?: string;
+  protagonista?:string;
   trailer?: string;
   galeria?: Array<number>;
   poster: boolean;
@@ -29,6 +30,7 @@ export interface Content {
   tipo?: string;
   lblProductor?: string;
   lblCoproductor?: string;
+  lblProtagonista?: string;
   premios?: string;
   sinopsis?: string;
   duracion?: string;
@@ -406,22 +408,35 @@ export const contenidos: Peliculas[] = [
     poster: true,
     guion: "Alfonso Acosta",
     director: "Alfonso Acosta",
-    productor: "Carolina Mosquera CON Juana Soto Dávila",
+    productor: "Carolina Mosquera",
     year: 2024,
+    protagonista: "Juana Soto",
+    trailer: "831368378",
 
     es: {
+      lblProtagonista: "Protagonizada por:",
       nombre: "Karol, la reina vampira",
-      temas: "Infantil",
+      temas: "Drama / comedia infantil",
       tipo: "Cortometraje",
       sinopsis: `La fiesta de cumpleaños de Karol (8), una niña convencida de que es un vampiro, se convierte en un caos debido a las peleas con sus padres. Un acto de rebeldía, cortarse ella sola su preciosa melena, será un punto de ruptura que volverá a unir a la familia.
       `,
       premios:
-        "Ganador de estímulo Realización de cortometraje infantil del FDC 2021",
+        `
+        <p>Ganador de estímulo Realización de cortometraje infantil del FDC 2021</p>
+<p>Premier mundial: NYICFF - NEW YORK INTERNATIONAL CHILDREN´S FILM FESTIVAL 2024 UNITED STATES</p>
+		<p>Premio del público edades de 10+</p>
+		<p>Premio del público edades de 18+</p>
+<p>Premier asiática:  SCIFF - SCHOOL CINEMA INTERNATIONAL FILM FESTIVAL 2024
+		INDIA & EMIRATOS ARABES UNIDOS</p>
+<p>31º FESTIVAL INTERNACIONAL DE CINE DE VALDIVIA (FICVALDIVIA) 2024</p>
+`,
         duracion: `12'34''`,
+        
     },
     en: {
+      lblProtagonista: "Star:",
       nombre: "Karol, The Vampire Queen",
-      temas: "Child",
+      temas: "Children's dramedy",
       tipo: "Shortfilm",
       sinopsis: `The birthday party of Karol (8), a girl convinced she is a vampire, turns into chaos due to fights with her parents. An act of rebellion, cutting her beautiful hair by herself, will be a breaking point that will bring the family back together.
       `,
@@ -431,7 +446,13 @@ export const contenidos: Peliculas[] = [
       The cousin does and understands everything.
       `, */
       premios:
-        "Ganador de estímulo Realización de cortometraje infantil del FDC 2021",
+        `<p>World Premier:	NYICFF - NEW YORK INTERNATIONAL CHILDREN´S FILM FESTIVAL 2024		UNITED STATES</p>
+		<p>Audience Award, ages 10+</p>
+		<p>Audience Award, ages 18+</p>
+<p>Asian Premier: 	SCIFF - SCHOOL CINEMA INTERNATIONAL FILM FESTIVAL 2024
+		INDIA & UNITED ARAB EMIRATES</p>
+<p>31º FESTIVAL INTERNACIONAL DE CINE DE VALDIVIA (FICVALDIVIA)2024</p>
+`,
         duracion: `12'34''`,
     },
   },
@@ -557,7 +578,8 @@ export const contenidos: Peliculas[] = [
     desarrollo: 2,
     slug: "anuncio",
     poster: true,
-    guion: "Alfonso Acosta y Carolina Mosquera",
+    //guion: "Alfonso Acosta y Carolina Mosquera",
+    productor: "Carolina Mosquera",
     director: "Alfonso Acosta",
 
     es: {

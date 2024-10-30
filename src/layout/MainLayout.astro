@@ -13,14 +13,16 @@ import { ViewTransitions } from 'astro:transitions';
 		<title>Cabecitanegra Producciones</title>
 		<ViewTransitions />
 	</head>
-	<body class="bg-indigo-950 h-lvh text-slate-100">
+	<body class="bg-indigo-950 h-screen text-slate-100">
 		<a href="/"><img src="/logoinv.png"	 alt="Cabecita Negra Producciones LOGO" 
 			class="absolute top-4 left-4 md:top-8 md:left-8 h-16 md-h24"></a>
 		<slot />
 	</body>
 </html>
 <style is:global>
-
+html {
+	background-color: aqua;
+}
 body {
 	font-family: 'Roboto', sans-serif;
 
