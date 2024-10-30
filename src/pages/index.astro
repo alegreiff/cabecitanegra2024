@@ -3,16 +3,11 @@ import { Base } from "@/components/Base";
 import { Ejemplo } from "@/components/Ejemplo";
 import MainLayout from "@/layout/MainLayout.astro";
 
-
 ---
-
-
 <MainLayout>
 	<section class="bg-[url('/fondo_inicio.png')] h-lvh bg-cover bg-no-repeat bg-center">
-		
-		<Base client:idle/>
-		
-			<Ejemplo client:idle/>
+	<Base client:idle/>
+	<Ejemplo client:idle/>
 
 		
 	</section>
