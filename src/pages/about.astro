@@ -1,12 +1,11 @@
 ---
+
 import { Base } from "@/components/Base";
 import MenuNav from "@/components/cabecita/MenuNav";
-import { SelectProyecto } from "@/components/cabecita/SelectProyecto";
-
+import Perfiles from "@/components/cabecita/Perfiles";
 import MainLayout from "@/layout/MainLayout.astro";
 
 const ruta = Astro.url.pathname;
-
 
 
 ---
@@ -15,9 +14,13 @@ const ruta = Astro.url.pathname;
 <MainLayout>
   <section class="bg-[url('/fondo_perritos.png')] h-lvh bg-cover bg-no-repeat bg-center">
     <Base client:idle/>
-    <MenuNav client:idle ruta={ruta} />
+    
+    <MenuNav client:idle ruta={ruta}/>
+    <Perfiles />
+    
+  
 
-  <SelectProyecto client:idle />
+  
   
 </section>
 </MainLayout>

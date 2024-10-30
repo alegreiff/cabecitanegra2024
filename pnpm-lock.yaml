@@ -20,6 +20,9 @@ importers:
       '@fontsource-variable/oswald':
         specifier: ^5.1.0
         version: 5.1.0
+      '@fontsource/roboto':
+        specifier: ^5.1.0
+        version: 5.1.0
       '@types/react':
         specifier: ^18.3.11
         version: 18.3.11
@@ -379,6 +382,9 @@ packages:
 
   '@fontsource-variable/oswald@5.1.0':
     resolution: {integrity: sha512-ZjvLLcT/5HKb3eZDruWyFxIUy9Pg5hV7yu7WTmBrEhVnS6xRMNzY4Zw7ir+x/6xZWeeYkyqff8HGapcn2EUcsw==}
+
+  '@fontsource/roboto@5.1.0':
+    resolution: {integrity: sha512-cFRRC1s6RqPygeZ8Uw/acwVHqih8Czjt6Q0MwoUoDe9U3m4dH1HmNDRBZyqlMSFwgNAUKgFImncKdmDHyKpwdg==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2589,6 +2595,8 @@ snapshots:
     optional: true
 
   '@fontsource-variable/oswald@5.1.0': {}
+
+  '@fontsource/roboto@5.1.0': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:

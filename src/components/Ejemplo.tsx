@@ -22,7 +22,7 @@ export const Ejemplo = () => {
         ></div>
         <a
           href="/proyectos"
-          className="block mt-12 text-center border-2 border-slate-200 p-2"
+          className="block tracking-widest uppercase mt-12 text-center  p-2"
         >
           {idioma === "es" ? "Entrar" : "Enter"}
         </a>
