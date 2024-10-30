@@ -19,6 +19,9 @@ export interface Peliculas {
   dossier?: string;
   ideaoriginal?: string;
   guion?: string;
+  artistas?: string;
+  companies?: string;
+  
 
   es?: Content;
   en?: Content;
@@ -27,6 +30,7 @@ export interface Peliculas {
 export interface Content {
   nombre: string;
   temas: string;
+  describe?:string;
   tipo?: string;
   lblProductor?: string;
   lblCoproductor?: string;
@@ -526,12 +530,13 @@ export const contenidos: Peliculas[] = [
     desarrollo: 1,
     slug: "antologia",
     poster: true,
-    productor: "Mochila digital",
-    coproductor: "Cabecitanegra producciones",
+    //productor: "Mochila digital",
+    //coproductor: "Cabecitanegra producciones",
     director: "Luis Ramos",
     ideaoriginal: "Carolina Mosquera y Alfonso Acosta",
     guion: "Alfonso Acosta y Mauricio Cuervo",
     trailer: "834020237",
+    companies: "Mochila Digital / Cabecitanegra Producciones",
     es: {
       nombre: "Antología de lo invisible",
       temas: "Arte",
@@ -540,6 +545,7 @@ export const contenidos: Peliculas[] = [
       `,
       lblCoproductor: "Coproductor",
       lblProductor: "Productor",
+      premios: "GANADORA CONVOCATORIA AUDIOVISUAL MINTIC 2024"
     },
     en: {
       nombre: "Antología de lo invisible",
@@ -549,6 +555,7 @@ export const contenidos: Peliculas[] = [
       `,
       lblCoproductor: "Co-Producer",
       lblProductor: "Producer",
+      premios: "GANADORA CONVOCATORIA AUDIOVISUAL MINTIC 2024"
     },
   },
   {
@@ -558,21 +565,28 @@ export const contenidos: Peliculas[] = [
     poster: true,
     ideaoriginal: "Carolina Mosquera",
     trailer: "890904074",
+    director: "Nadia Granados",
+    productor: "Carolina Mosquera",
+    artistas: "María Leubro, Zulima Ochoa, Laura Campaz, Lucía Vargas",
 
     es: {
       nombre: "Señoritas",
+      describe: "Serie documental sobre arte contemporáneo",
       temas: "",
       tipo: "Largometraje documental",
       sinopsis: `Serie documental sobre artistas que desde sus obras y vidas han desafiado el concepto reduccionista y patriarcal de la etiqueta “señorita” y el puesto y responsabilidades que se le son asignadas en sociedad. Es la vida de cuatro mujeres artistas colombianas de diferentes disciplinas contemporáneas que se esfuerzan por lograr un equilibrio entre su vocación artística, sus intereses familiares y el trabajo colectivo y comunitario. A través de la materialidad plástica y performática hacemos un recorrido en vida por las obras de estas mujeres, que son el reflejo de su vida misma. Mujeres que habitan cuerpos segregados pero que desde sus propias feminidades crean un arte político, incómodo para el statu-quo, un arte que moviliza e inspira cambios. Con confianza, con sinceridad, con lealtad y sin solemnidad la directora visitará sus hogares, sus talleres, sus espacios, sus paisajes, sus callejones y recuerdos, reirán, quizás llorarán, se harán preguntas cómodas, otras incómodas, compartirán experiencias y conocimientos.
       `,
+      premios: "GANADORA CONVOCATORIA AUDIOVISUAL MINTIC 2023",
     },
     en: {
       nombre: "Señoritas",
+      describe: "Serie documental sobre arte contemporáneo",
       temas: "",
       tipo: "Largometraje documental",
       sinopsis: `Fuchsia, pink, pale pink, pastel pink, millenial pink, all shades of bleached red, protagonist of multiple fictions about femininity.<br /><br />
       Through the work of six Colombian artists I will make a historical-capricious journey through some of the meanings attributed to this paradigmatic color. Installation, oils, acrylics, sculpture, glass and photography are mixed in collage with textiles, pre-Hispanic dyes, menstrual blood, Misak flags, Neo-Granadian sculptures and some punk.
       `,
+      premios: "GANADORA CONVOCATORIA AUDIOVISUAL MINTIC 2023",
     },
   },
   {

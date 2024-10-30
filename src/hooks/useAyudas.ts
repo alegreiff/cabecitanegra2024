@@ -59,12 +59,27 @@ function useAyudas() {
   }
 
 
+  const artistas = (id:number) => {
+    const artistas = contenidos.find((p) => p.id === id)?.artistas || "";
+    if( !artistas ) {
+      return ""
+    }
+    return `${idioma == "es" ? "Artistas:" : "Artists:" } ${artistas}`  ;
+  }
+
+  const companies = (id:number) => {
+    const companies = contenidos.find((p) => p.id === id)?.companies || "";
+    if( !companies ) {
+      return ""
+    }
+    return `${idioma == "es" ? "Compañías productoras:" : "Production companies:" } ${companies}`  ;
+  }
   
   return {
     desarrollo,
     productor,
     director,
-    coproductor, agenteventas, protagonista
+    coproductor, agenteventas, protagonista, artistas, companies
   }
 
 

@@ -17,6 +17,8 @@ export const Proyecto = ({ codigo }: Props) => {
     coproductor,
     agenteventas,
     protagonista,
+    artistas,
+    companies,
   } = useAyudas();
   const { pelicula: film, setPelicula } = usePeliculaStore();
   const idioma = useIdiomaStore((lan) => lan.idioma);
@@ -62,9 +64,11 @@ export const Proyecto = ({ codigo }: Props) => {
           <div className="p-4 bg-indigo-900/50">
             <h4> {desarrollo(codigo)} </h4>
             <span> {film?.year} </span>
+            <p>{langContent.describe}</p>
 
             <p>{langContent.temas}</p>
             <p> {langContent.duracion} </p>
+            <p>{artistas(codigo)}</p>
             {film?.cast && (
               <p>
                 {idioma === "es" ? "Reparto:" : "Cast:"} {film?.cast}
@@ -72,6 +76,7 @@ export const Proyecto = ({ codigo }: Props) => {
             )}
             <p>{director(codigo)}</p>
             <p>{productor(codigo)}</p>
+            <p>{companies(codigo)}</p>
             <p>{protagonista(codigo)}</p>
             <p>{coproductor(codigo)}</p>
             <p>{agenteventas(codigo)}</p>
