@@ -4,6 +4,7 @@ type Props = {
 };
 
 export default function MenuNav({ ruta }: Props) {
+  const rutaLimpia = ruta.replace(/^\/+/g, "");
   const { idioma } = useIdiomaStore();
 
   return (
@@ -11,7 +12,7 @@ export default function MenuNav({ ruta }: Props) {
       <a
         href="/proyectos"
         className={
-          ruta === "/proyectos/"
+          rutaLimpia === "proyectos"
             ? "uppercase border-b-4 pb-2 border-red-500"
             : "uppercase"
         }
@@ -21,7 +22,7 @@ export default function MenuNav({ ruta }: Props) {
       <a
         href="/about"
         className={
-          ruta === "/about/"
+          rutaLimpia === "about"
             ? "uppercase border-b-4 pb-2 border-red-500"
             : "uppercase"
         }
