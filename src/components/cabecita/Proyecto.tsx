@@ -94,7 +94,10 @@ export const Proyecto = ({ codigo }: Props) => {
           </div>
         </div>
         {film?.trailer && (
-          <div className="relative" style={{ paddingTop: "56.25%" }}>
+          <div
+            className="relative bg-transparent "
+            style={{ paddingTop: "56.25%", backgroundColor: "transparent" }}
+          >
             <iframe
               src={`https://player.vimeo.com/video/${film?.trailer}`}
               width="640"
@@ -104,7 +107,7 @@ export const Proyecto = ({ codigo }: Props) => {
             ></iframe>
           </div>
         )}
-        <div className="h-[960px]"></div>
+        <div className="h-[450px]"></div>
       </div>
     </>
   );
