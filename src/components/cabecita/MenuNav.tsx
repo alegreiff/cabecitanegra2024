@@ -4,7 +4,8 @@ type Props = {
 };
 
 export default function MenuNav({ ruta }: Props) {
-  const rutaLimpia = ruta.replace(/^\/+/g, "");
+  const rutaLimpia = ruta.replaceAll("/", "");
+
   const { idioma } = useIdiomaStore();
 
   return (
