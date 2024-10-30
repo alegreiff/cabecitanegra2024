@@ -601,7 +601,7 @@ export interface Personas {
 export const personas:Personas[] = [
   {
     nombres: "Alfonso Acosta",
-    rol: {  es: 'DI DIRECTOR / GUIONISTA / MONTAJISTA / DOCENTE RECTOR', en: 'DIRECTOR / SCRIPTWRITER / EDITOR ' }, 
+    rol: {  es: 'DIRECTOR / GUIONISTA / MONTAJISTA / DOCENTE RECTOR', en: 'DIRECTOR / SCRIPTWRITER / EDITOR ' }, 
     descripcion: {
       es: `<p>Director, guionista y montajista colombiano. Estudió cine en la Universidad Nacional de Colombia. Su primer largometraje, El resquicio (2012) se estrenó en el Festival Internacional de Cine de Busán y su agente de ventas es E One de Canadá. Director y guionista de la película Cólera morbo (2021). Director de Laika en las Estrellas (2020) una serie juvenil y animalista, y el cortometraje infantil Duermevela (2019).</p>
   
