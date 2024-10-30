@@ -27,6 +27,16 @@ export default function Puedes() {
           __html: idioma === "es" ? es : en,
         }}
       ></div>
+
+      <div className="relative mt-12" style={{ paddingTop: "56.25%" }}>
+        <iframe
+          src={`https://player.vimeo.com/video/428813760`}
+          width="640"
+          height="360"
+          allow="autoplay; fullscreen"
+          className="absolute inset-0 w-full h-full"
+        ></iframe>
+      </div>
     </div>
   );
 }
