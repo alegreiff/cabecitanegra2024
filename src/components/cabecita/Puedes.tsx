@@ -28,7 +28,10 @@ export default function Puedes() {
         }}
       ></div>
 
-      <div className="relative mt-12" style={{ paddingTop: "56.25%" }}>
+      <div
+        className="relative mt-12"
+        style={{ paddingTop: "56.25%", backgroundColor: "transparent" }}
+      >
         <iframe
           src={`https://player.vimeo.com/video/428813760`}
           width="640"
