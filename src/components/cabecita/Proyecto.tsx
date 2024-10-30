@@ -104,6 +104,7 @@ export const Proyecto = ({ codigo }: Props) => {
             ></iframe>
           </div>
         )}
+        <div className="h-[960px]"></div>
       </div>
     </>
   );
