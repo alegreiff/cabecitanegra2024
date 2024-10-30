@@ -13,7 +13,7 @@ const ruta = Astro.url.pathname;
 
 <MainLayout>
   <section class="bg-[url('/fondo_perritos.png')] h-lvh bg-cover bg-no-repeat bg-center">
-    { ruta }
+    
     <Base client:idle/>
     
     <MenuNav client:idle ruta={ruta}/>

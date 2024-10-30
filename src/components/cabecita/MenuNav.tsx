@@ -11,7 +11,7 @@ export default function MenuNav({ ruta }: Props) {
       <a
         href="/proyectos"
         className={
-          ruta === "/proyectos"
+          ruta === "/proyectos/"
             ? "uppercase border-b-4 pb-2 border-red-500"
             : "uppercase"
         }
@@ -21,7 +21,7 @@ export default function MenuNav({ ruta }: Props) {
       <a
         href="/about"
         className={
-          ruta === "/about"
+          ruta === "/about/"
             ? "uppercase border-b-4 pb-2 border-red-500"
             : "uppercase"
         }
