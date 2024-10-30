@@ -300,9 +300,10 @@ export const contenidos: Peliculas[] = [
     id: 11,
     desarrollo: 3,
     slug: "senant",
-    poster: false,
+    poster: true,
     ideaoriginal: "Carolina Mosquera",
     director: "Nadia Granados",
+    
 
     es: {
       nombre: "Señoritas",
@@ -554,8 +555,9 @@ export const contenidos: Peliculas[] = [
     id: 14,
     desarrollo: 2,
     slug: "rosa",
-    poster: false,
+    poster: true,
     ideaoriginal: "Carolina Mosquera",
+    trailer: "890904074",
 
     es: {
       nombre: "Señoritas",

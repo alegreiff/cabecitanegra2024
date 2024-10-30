@@ -47,7 +47,7 @@ export const Proyecto = ({ codigo }: Props) => {
     <>
       <div className="h-auto w-full p-4">
         <h2 className="text-red-500 text-3xl font-bold pb-4">
-          {langContent.nombre}
+          {langContent.nombre} - {codigo}
         </h2>
 
         <div className="lg:flex gap-8">
