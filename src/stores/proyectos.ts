@@ -413,10 +413,7 @@ export const contenidos: Peliculas[] = [
       nombre: "Karol, la reina vampira",
       temas: "Infantil",
       tipo: "Cortometraje",
-      sinopsis: `Es la fiesta de cumpleaños de Karol (8) y lo que debería ser un momento grato se convierte en un caos por las peleas con sus padres. Karol, quien tiene una personalidad arrolladora y la capacidad de destrucción del Demonio de Tasmania, está convencida de que es una vampira y de que su lugar es estar colgada de cabeza del árbol viendo el mundo al revés. Su mamá no entiende que no se deje peinar, que no luzca su magnífica cabellera y que prefiera vestir esa roñosa capa.<br /><br />
-      La fiesta avanza y la tensión aumenta. El padre culpa a la madre. Los abuelos discuten. Solo en su tío la niña encuentra la complicidad para enfrentar el mundo de los adultos. Y en un último acto de rebeldía se corta ella misma el pelo. Pero lo que parecía el rebose de la copa termina por unir.<br /><br />
-      Anochece y las cosas se calman. Karol y su primo observan de lejos a los adultos ser felices en su torpe baile. El niño quiere saber cómo es ser ella. “Ponte boca abajo y mira al mundo al revés”.<br /><br />
-      El niño lo hace y entiende todo.
+      sinopsis: `La fiesta de cumpleaños de Karol (8), una niña convencida de que es un vampiro, se convierte en un caos debido a las peleas con sus padres. Un acto de rebeldía, cortarse ella sola su preciosa melena, será un punto de ruptura que volverá a unir a la familia.
       `,
       premios:
         "Ganador de estímulo Realización de cortometraje infantil del FDC 2021",
@@ -426,10 +423,7 @@ export const contenidos: Peliculas[] = [
       nombre: "Karol, The Vampire Queen",
       temas: "Child",
       tipo: "Shortfilm",
-      sinopsis: `Es la fiesta de cumpleaños de Karol (8) y lo que debería ser un momento grato se convierte en un caos por las peleas con sus padres. Karol, quien tiene una personalidad arrolladora y la capacidad de destrucción del Demonio de Tasmania, está convencida de que es una vampira y de que su lugar es estar colgada de cabeza del árbol viendo el mundo al revés. Su mamá no entiende que no se deje peinar, que no luzca su magnífica cabellera y que prefiera vestir esa roñosa capa.<br /><br />
-      La fiesta avanza y la tensión aumenta. El padre culpa a la madre. Los abuelos discuten. Solo en su tío la niña encuentra la complicidad para enfrentar el mundo de los adultos. Y en un último acto de rebeldía se corta ella misma el pelo. Pero lo que parecía el rebose de la copa termina por unir.<br /><br />
-      Anochece y las cosas se calman. Karol y su primo observan de lejos a los adultos ser felices en su torpe baile. El niño quiere saber cómo es ser ella. “Ponte boca abajo y mira al mundo al revés”.<br /><br />
-      El niño lo hace y entiende todo.
+      sinopsis: `The birthday party of Karol (8), a girl convinced she is a vampire, turns into chaos due to fights with her parents. An act of rebellion, cutting her beautiful hair by herself, will be a breaking point that will bring the family back together.
       `,
       /* sinopsis: `It´s Karol's birthday party (8) and what should be a pleasant moment turns into chaos because of the fights with her parents. Karol, who has an overwhelming personality and the destructive capacity of the Tasmanian Devil, is convinced that she´s a vampire and that her place is to hang upside down from the tree and see the world backwards. Her mom doesn't understand why she won't let her hair be combed, why she doesn't show off her magnificent hair and why she prefers to wear that filthy cape.<br /><br />
       The party's going on and the tension is rising. The father blames the mother. The grandparents argue. Only in her uncle, Karol finds the complicity to face the adult world. And in a final act of defiance she cuts her own hair. But what seemed like the overflow of the cup ends up uniting.<br /><br />
@@ -546,8 +540,7 @@ export const contenidos: Peliculas[] = [
       nombre: "Señoritas",
       temas: "",
       tipo: "Largometraje documental",
-      sinopsis: `Fucsia, rosa, rosa pálido, rosa pastel, millenial pink, todos tonos de rojo blanqueado protagonista de múltiples ficciones sobre la feminidad.<br /><br />
-      A través de la obra de seis artistas colombianas haré un recorrido histórico-caprichoso por algunos significados endilgados a este paradigmático color. Instalación, óleos, acrílicos, escultura, vidrio y fotografía se mezclan en clave de collage con textiles, tintes prehispánicos, sangre menstrual, banderas Misak, esculturas neogranadinas y algo de punk.
+      sinopsis: `Serie documental sobre artistas que desde sus obras y vidas han desafiado el concepto reduccionista y patriarcal de la etiqueta “señorita” y el puesto y responsabilidades que se le son asignadas en sociedad. Es la vida de cuatro mujeres artistas colombianas de diferentes disciplinas contemporáneas que se esfuerzan por lograr un equilibrio entre su vocación artística, sus intereses familiares y el trabajo colectivo y comunitario. A través de la materialidad plástica y performática hacemos un recorrido en vida por las obras de estas mujeres, que son el reflejo de su vida misma. Mujeres que habitan cuerpos segregados pero que desde sus propias feminidades crean un arte político, incómodo para el statu-quo, un arte que moviliza e inspira cambios. Con confianza, con sinceridad, con lealtad y sin solemnidad la directora visitará sus hogares, sus talleres, sus espacios, sus paisajes, sus callejones y recuerdos, reirán, quizás llorarán, se harán preguntas cómodas, otras incómodas, compartirán experiencias y conocimientos.
       `,
     },
     en: {
