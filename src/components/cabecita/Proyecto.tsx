@@ -57,7 +57,7 @@ export const Proyecto = ({ codigo }: Props) => {
             <img
               alt={langContent.nombre}
               src={`/posteres/${codigo}po.jpg`}
-              className="aspect[320/457] object-contain self-start mx-auto"
+              className="aspect[320/457] object-contain self-start mx-auto mb-4"
             />
           ) : null}
 
