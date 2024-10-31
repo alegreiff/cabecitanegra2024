@@ -23,7 +23,7 @@ export const Proyecto = ({ codigo }: Props) => {
   } = useAyudas();
   const { pelicula: film, setPelicula } = usePeliculaStore();
   const idioma = useIdiomaStore((lan) => lan.idioma);
-  console.log("MI IDIOMA ES: ", idioma);
+  /* console.log("MI IDIOMA ES: ", idioma); */
   //const { idioma } = useIdiomaStore();
   const [currentFilm, setCurrentFilm] = useState<Peliculas>({} as Peliculas);
   const [langContent, setLangContent] = useState(null as any);
@@ -41,7 +41,7 @@ export const Proyecto = ({ codigo }: Props) => {
       }
     }
   }, [idioma, film, codigo]);
-  console.log("GALLERY", film?.galeria);
+  /* console.log("GALLERY", film?.galeria); */
 
   if (!langContent) {
     return;
