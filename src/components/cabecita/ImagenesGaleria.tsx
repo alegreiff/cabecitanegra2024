@@ -20,7 +20,7 @@ export default function ImagenesGaleria({ galeria, code, label }: Props) {
   return (
     <>
       <button type="button" onClick={() => setOpen(true)}>
-        <h3 className="border-b-2 pb-2 border-red-500">{label}</h3>
+        <h3 className="mr-4 border-b-2 pb-2 border-red-500">{label}</h3>
       </button>
 
       <Lightbox

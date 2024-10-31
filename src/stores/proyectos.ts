@@ -59,6 +59,8 @@ export const contenidos: Peliculas[] = [
       3, 4, 7, 8, 13, 14, 15, 16, 18, 19, 20, 24, 25, 27, 29, 30, 31, 34,
     ],
     dossier: "RAGE.pdf",
+    
+    
     es: {
       nombre: "Cólera morbo",
       temas: "Drama / Thriller / Historia real",
@@ -420,6 +422,7 @@ export const contenidos: Peliculas[] = [
     galeria: [
       1, 2, 3, 4, 5, 6
     ],
+    dossier: "KAROL-MINI-DOSSIER.pdf",
 
     es: {
       lblProtagonista: "Protagonizada por:",

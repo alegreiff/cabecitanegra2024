@@ -101,9 +101,16 @@ export const Proyecto = ({ codigo }: Props) => {
             label={idioma === "es" ? "Ver galería" : "View Gallery"}
           />
         )}
+        {film?.dossier && (
+          <a href={`/dossier/${film?.dossier}`} target="_blank">
+            <h3 className="inline border-b-2 pb-2 border-red-500">
+              Dossier {langContent.nombre}
+            </h3>
+          </a>
+        )}
         {film?.trailer && (
           <div
-            className="relative "
+            className="relative mt-12"
             style={{
               paddingTop: "56.25%",
               backgroundColor: "transparent",
