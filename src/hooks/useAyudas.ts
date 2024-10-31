@@ -79,7 +79,7 @@ function useAyudas() {
   const fotosGaleria = (galeria: Array<number>, code: number) => {
     let photos:Array<any> = []
     galeria.forEach(element => {
-      const foto = {src: `posteres/${code}/${element}.jpg`,  width: 1920, height: 1080 }
+      const foto = {src: `/posteres/${code}/${element}.jpg`,  width: 1920, height: 1080 }
       photos.push(foto)
     
     });
