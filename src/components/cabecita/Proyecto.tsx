@@ -102,7 +102,7 @@ export const Proyecto = ({ codigo }: Props) => {
             }}
           >
             <iframe
-              src={`https://player.vimeo.com/video/${film?.trailer}?transparent=0`}
+              src={`https://player.vimeo.com/video/${film?.trailer}?transparent=1&background=0`}
               width="auto"
               height="auto"
               allow="autoplay; fullscreen"
@@ -110,7 +110,6 @@ export const Proyecto = ({ codigo }: Props) => {
             ></iframe>
           </div>
         )}
-        <div className="h-[450px]"></div>
       </div>
     </>
   );

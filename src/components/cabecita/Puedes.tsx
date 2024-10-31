@@ -33,7 +33,7 @@ export default function Puedes() {
         style={{ paddingTop: "56.25%", backgroundColor: "transparent" }}
       >
         <iframe
-          src={`https://player.vimeo.com/video/428813760?transparent=0`}
+          src={`https://player.vimeo.com/video/428813760?transparent=1&background=0`}
           width="640"
           height="360"
           allow="autoplay; fullscreen"
