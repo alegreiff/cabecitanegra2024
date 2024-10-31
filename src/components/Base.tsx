@@ -6,8 +6,18 @@ export const Base = () => {
 
   return (
     <div className="text-white text-3xl flex gap-8 justify-end container mx-auto">
-      <button onClick={() => cambiaIdioma("en")}>EN</button>
-      <button onClick={() => cambiaIdioma("es")}>ES</button>
+      <button
+        onClick={() => cambiaIdioma("en")}
+        className={idioma === "en" ? "border-b-2  border-red-500" : ""}
+      >
+        EN
+      </button>
+      <button
+        onClick={() => cambiaIdioma("es")}
+        className={idioma === "es" ? "border-b-2  border-red-500" : ""}
+      >
+        ES
+      </button>
     </div>
   );
 };
