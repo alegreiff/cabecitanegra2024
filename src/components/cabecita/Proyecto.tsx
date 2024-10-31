@@ -41,6 +41,7 @@ export const Proyecto = ({ codigo }: Props) => {
       }
     }
   }, [idioma, film, codigo]);
+  console.log("GALLERY", film?.galeria);
 
   if (!langContent) {
     return;
@@ -94,13 +95,14 @@ export const Proyecto = ({ codigo }: Props) => {
             )}
           </div>
         </div>
-        {film?.galeria && (
+
+        {film?.galeria != undefined ? (
           <ImagenesGaleria
             galeria={film?.galeria}
             code={codigo}
-            label={idioma === "es" ? "Ver galería" : "View Gallery"}
+            label={langContent.nombre}
           />
-        )}
+        ) : null}
         {film?.dossier && (
           <a href={`/dossier/${film?.dossier}`} target="_blank">
             <h3 className="inline border-b-2 pb-2 border-red-500">

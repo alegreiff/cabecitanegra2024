@@ -1,4 +1,10 @@
-
+export interface Galer {
+  
+    id: number;
+    w: number;
+    h: number;
+  
+}
 
 
 
@@ -13,7 +19,7 @@ export interface Peliculas {
   agenteventas?: string;
   protagonista?:string;
   trailer?: string;
-  galeria?: Array<number>;
+  galeria?: Galer[]
   poster: boolean;
   slug: string;
   dossier?: string;
@@ -56,7 +62,24 @@ export const contenidos: Peliculas[] = [
     slug: "colera",
     poster: true,
     galeria: [
-      3, 4, 7, 8, 13, 14, 15, 16, 18, 19, 20, 24, 25, 27, 29, 30, 31, 34,
+      {id:3, w:1600, h:675}, 
+{id:4, w:1600, h:675}, 
+{id:7, w:1600, h:675}, 
+{id:8, w:1600, h:675}, 
+{id:13, w:1600, h:675}, 
+{id:14, w:1600, h:675}, 
+{id:15, w:1600, h:675}, 
+{id:16, w:1600, h:675}, 
+{id:18, w:1600, h:675}, 
+{id:19, w:1600, h:675}, 
+{id:20, w:1600, h:675}, 
+{id:24, w:1600, h:675}, 
+{id:25, w:1600, h:675}, 
+{id:27, w:1600, h:675}, 
+{id:29, w:1600, h:675}, 
+{id:30, w:1600, h:675}, 
+{id:31, w:1600, h:675}, 
+{id:34, w:1600, h:675}, 
     ],
     dossier: "RAGE.pdf",
     
@@ -118,8 +141,29 @@ export const contenidos: Peliculas[] = [
     poster: true,
     trailer: "416083962",
     galeria: [
-      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-      22, 23, 24,
+      {id:1, w:1600, h:675}, 
+{id:3, w:1600, h:675}, 
+{id:4, w:1600, h:675}, 
+{id:5, w:1600, h:675}, 
+{id:6, w:1600, h:675}, 
+{id:7, w:1600, h:675}, 
+{id:8, w:1600, h:675}, 
+{id:9, w:1600, h:675}, 
+{id:10, w:1600, h:675}, 
+{id:11, w:1600, h:675}, 
+{id:12, w:1600, h:675}, 
+{id:13, w:1600, h:675}, 
+{id:14, w:1600, h:675}, 
+{id:15, w:1600, h:675}, 
+{id:16, w:1600, h:675}, 
+{id:17, w:1600, h:675}, 
+{id:18, w:1600, h:675}, 
+{id:19, w:1600, h:675}, 
+{id:20, w:1600, h:675}, 
+{id:21, w:1600, h:675}, 
+{id:22, w:1600, h:675}, 
+{id:23, w:1600, h:675}, 
+{id:24, w:1600, h:675},
     ],
     director: "Alfonso Acosta",
     productor: "Carolina Mosquera",
@@ -167,7 +211,15 @@ export const contenidos: Peliculas[] = [
     slug: "duermevela",
     poster: true,
     cast: "Dominique Forbes",
-    galeria: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    galeria: [{id:1, w:1600, h:675}, 
+      {id:2, w:1600, h:675}, 
+      {id:3, w:1600, h:675}, 
+      {id:4, w:1600, h:675}, 
+      {id:5, w:1600, h:675}, 
+      {id:6, w:1600, h:675}, 
+      {id:7, w:1600, h:675}, 
+      {id:8, w:1600, h:675}, 
+      {id:9, w:1600, h:675}, ],
     director: "Alfonso Acosta",
     productor: "Carolina Mosquera",
     es: {
@@ -207,7 +259,24 @@ export const contenidos: Peliculas[] = [
     slug: "resquicio",
     agenteventas: "E-One",
     poster: true,
-    galeria: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+    galeria: [{id:1, w:1200, h:815}, 
+      {id:2, w:1200, h:417}, 
+      {id:3, w:1200, h:696}, 
+      {id:4, w:1200, h:733}, 
+      {id:5, w:707, h:1200}, 
+      {id:6, w:1200, h:672}, 
+      {id:7, w:976, h:1200}, 
+      {id:8, w:1200, h:571}, 
+      {id:9, w:733, h:1200}, 
+      {id:10, w:1200, h:551}, 
+      {id:11, w:772, h:1200}, 
+      {id:12, w:1200, h:675}, 
+      {id:13, w:800, h:1200}, 
+      {id:14, w:687, h:1200}, 
+      {id:15, w:756, h:1200}, 
+      {id:16, w:800, h:1200}, 
+      {id:17, w:1200, h:506}, 
+      {id:18, w:848, h:1200},],
     trailer: "47170131",
     director: "Alfonso Acosta",
     productor: "Carolina Mosquera, Ricardo Cantor",
@@ -267,7 +336,7 @@ export const contenidos: Peliculas[] = [
     desarrollo: 9,
     slug: "cnet",
     poster: true,
-    galeria: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+    /* galeria: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], */
     es: {
       nombre: "Casi nunca es tarde",
       temas: "Drama / Thriller histórico / Coming-of-age",
@@ -420,7 +489,12 @@ export const contenidos: Peliculas[] = [
     protagonista: "Juana Soto",
     trailer: "831368378",
     galeria: [
-      1, 2, 3, 4, 5, 6
+      {id:1, w:960, h:540}, 
+{id:2, w:960, h:540}, 
+{id:3, w:960, h:540}, 
+{id:4, w:960, h:540}, 
+{id:5, w:960, h:540}, 
+{id:6, w:960, h:540}, 
     ],
     dossier: "KAROL-MINI-DOSSIER.pdf",
 
@@ -575,7 +649,10 @@ export const contenidos: Peliculas[] = [
     productor: "Carolina Mosquera",
     artistas: "María Leubro, Zulima Ochoa, Laura Campaz, Lucía Vargas",
     galeria: [
-      1,2, 3,4
+      {id:1, w:960, h:540}, 
+      {id:2, w:960, h:540}, 
+      {id:3, w:960, h:540}, 
+      {id:4, w:960, h:540}, 
     ],
 
     es: {

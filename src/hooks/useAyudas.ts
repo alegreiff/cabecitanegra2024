@@ -1,5 +1,5 @@
 import { useIdiomaStore } from "@/stores/idioma";
-import { contenidos, type Peliculas } from "@/stores/proyectos";
+import { contenidos, type Galer, type Peliculas } from "@/stores/proyectos";
 
 function useAyudas() {
   const idioma = useIdiomaStore((lan) => lan.idioma);
@@ -76,10 +76,13 @@ function useAyudas() {
   }
 
 
-  const fotosGaleria = (galeria: Array<number>, code: number) => {
+  const fotosGaleria = (galeria: Galer[], code: number) => {
+    if( !galeria ){
+      return null;
+    }
     let photos:Array<any> = []
     galeria.forEach(element => {
-      const foto = {src: `/posteres/${code}/${element}.jpg`,  width: 1920, height: 1080 }
+      const foto = {src: `/posteres/${code}/${element.id}.jpg`, min: `/posteres/${code}/${element.id}-min.jpg`, w: element.w, h: element.h}
       photos.push(foto)
     
     });
