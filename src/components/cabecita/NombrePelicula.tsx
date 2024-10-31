@@ -26,7 +26,7 @@ export const NombrePelicula = ({
         className={
           codeFilm != code
             ? "mb-2 text-xl font-bold text-red-500 hover:text-red-300 block cursor-pointer"
-            : "mb-2 text-xl font-bold text-red-300 hover:text-red-500 block cursor-pointer"
+            : "mb-2 text-xl font-bold text-red-300 hover:text-red-200 block cursor-pointer"
         }
       >
         {peliname}
