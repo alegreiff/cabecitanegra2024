@@ -100,7 +100,7 @@ export const Proyecto = ({ codigo }: Props) => {
               width="auto"
               height="auto"
               allow="autoplay; fullscreen"
-              className="absolute inset-0 w-full h-full"
+              className=""
             ></iframe>
           </div>
         )}
