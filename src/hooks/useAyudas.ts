@@ -74,12 +74,26 @@ function useAyudas() {
     }
     return `${idioma == "es" ? "Compañías productoras:" : "Production companies:" } ${companies}`  ;
   }
+
+
+  const fotosGaleria = (galeria: Array<number>, code: number) => {
+    let photos:Array<any> = []
+    galeria.forEach(element => {
+      const foto = {src: `posteres/${code}/${element}.jpg`,  width: 1920, height: 1080 }
+      photos.push(foto)
+    
+    });
+    return photos;
+
+  }
+
+
   
   return {
     desarrollo,
     productor,
     director,
-    coproductor, agenteventas, protagonista, artistas, companies
+    coproductor, agenteventas, protagonista, artistas, companies, fotosGaleria
   }
 
 

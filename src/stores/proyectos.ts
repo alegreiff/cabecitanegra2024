@@ -417,6 +417,9 @@ export const contenidos: Peliculas[] = [
     year: 2024,
     protagonista: "Juana Soto",
     trailer: "831368378",
+    galeria: [
+      1, 2, 3, 4, 5, 6
+    ],
 
     es: {
       lblProtagonista: "Protagonizada por:",
@@ -568,6 +571,9 @@ export const contenidos: Peliculas[] = [
     director: "Nadia Granados",
     productor: "Carolina Mosquera",
     artistas: "María Leubro, Zulima Ochoa, Laura Campaz, Lucía Vargas",
+    galeria: [
+      1,2, 3,4
+    ],
 
     es: {
       nombre: "Señoritas",

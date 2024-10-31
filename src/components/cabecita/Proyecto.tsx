@@ -3,6 +3,7 @@ import { useIdiomaStore } from "@/stores/idioma";
 import usePeliculaStore from "@/stores/peliculastore";
 import type { Peliculas } from "@/stores/proyectos";
 import { useEffect, useState } from "react";
+import ImagenesGaleria from "./ImagenesGaleria";
 
 interface Props {
   pelicula: string;
@@ -93,6 +94,13 @@ export const Proyecto = ({ codigo }: Props) => {
             )}
           </div>
         </div>
+        {film?.galeria && (
+          <ImagenesGaleria
+            galeria={film?.galeria}
+            code={codigo}
+            label={idioma === "es" ? "Ver galería" : "View Gallery"}
+          />
+        )}
         {film?.trailer && (
           <div
             className="relative "
