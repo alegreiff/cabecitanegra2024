@@ -41,7 +41,7 @@ export default function ImagenesGaleria({ galeria, code, label }: Props) {
     <div className="mt-12 mb-8">
       {fotos.length > 0 && (
         <Gallery>
-          <div className="flex flex-wrap gap-4">
+          <div className="md:flex md:flex-wrap md:gap-4">
             {fotos.map((photo, i) => (
               <Item
                 key={i}
@@ -55,7 +55,7 @@ export default function ImagenesGaleria({ galeria, code, label }: Props) {
                     ref={ref}
                     onClick={open}
                     src={photo.min}
-                    className=" object-contain"
+                    className=" object-contain mx-auto pb-4"
                   />
                 )}
               </Item>
