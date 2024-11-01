@@ -55,7 +55,7 @@ export default function ImagenesGaleria({ galeria, code, label }: Props) {
                     ref={ref}
                     onClick={open}
                     src={photo.min}
-                    className=" object-contain mx-auto pb-4"
+                    className="cursor-zoom-in object-contain mx-auto pb-4"
                   />
                 )}
               </Item>
