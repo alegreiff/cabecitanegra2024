@@ -9,7 +9,7 @@ export default function MenuNav({ ruta }: Props) {
   const { idioma } = useIdiomaStore();
 
   return (
-    <div className="pt-20 h-auto  flex justify-center gap-8">
+    <div className="pt-20   flex justify-center gap-8">
       <a
         href="/proyectos"
         className={

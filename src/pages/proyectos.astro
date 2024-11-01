@@ -16,10 +16,17 @@ const ruta = Astro.url.pathname;
 <MainLayout>
   <!-- <section class="cabecitaparallax bg-[url('/fondo_perritos.png')] h-fit md:h-screen bg-cover bg-no-repeat bg-center"> -->
   <section class="cabecitaparallax bg-[url('/fondo_perritos.png')] bg-no-repeat bg-center bg-fixed bg-cover">
+    
     <Base client:idle/>
-    <MenuNav client:idle ruta={ruta} />
+    
+      
+      <MenuNav client:idle ruta={ruta} />
+    
+    
 
-  <SelectProyecto client:idle />
+  
+    <SelectProyecto client:idle />
+  
   <FooterCabecita />
 </section>
 

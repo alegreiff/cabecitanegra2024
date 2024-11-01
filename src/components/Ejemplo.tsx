@@ -14,7 +14,7 @@ export const Ejemplo = () => {
   const { idioma } = useIdiomaStore();
   return (
     <>
-      <div className="md:max-w-lg px-4 md:p-20 text-2xl font-light mt-28 md:mt-40">
+      <div className="md:max-w-lg px-4 md:p-20 text-xl md:text-2xl font-light mt-28 md:mt-40">
         <div
           dangerouslySetInnerHTML={{
             __html: idioma === "es" ? introES : introEN,
