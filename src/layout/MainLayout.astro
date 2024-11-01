@@ -2,6 +2,12 @@
 import '@fontsource-variable/oswald';
 import '@fontsource/roboto';
 import { ViewTransitions } from 'astro:transitions';
+
+interface Props {
+	fondo?: string;
+}
+
+const { fondo=false } = Astro.props;
 ---
 
 <html lang="es" class="bg-stone-950">
@@ -16,8 +22,13 @@ import { ViewTransitions } from 'astro:transitions';
 	</head>
 	<body class="h-lvh text-slate-100">
 		<!-- <body class="bg-indigo-950 h-lvh text-slate-100"> -->
-		<a href="/"><img src="/logoinv.png"	 alt="Cabecita Negra Producciones LOGO" 
-			class="absolute top-4 left-4 md:top-8 md:left-8 h-16 md-h24"></a>
+		<a href="/">
+			
+				<img src="/logoinv.png"	 alt="Cabecita Negra Producciones LOGO" 
+			class={ fondo ? 'invert absolute top-4 left-4 md:top-8 md:left-8 h-16 md-h24' : 'absolute top-4 left-4 md:top-8 md:left-8 h-16 md-h24'}>
+			
+		
+		</a>
 		<slot />
 	</body>
 </html>
