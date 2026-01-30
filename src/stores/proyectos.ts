@@ -1,12 +1,8 @@
 export interface Galer {
-  
-    id: number;
-    w: number;
-    h: number;
-  
+  id: number;
+  w: number;
+  h: number;
 }
-
-
 
 export interface Peliculas {
   id: number;
@@ -17,9 +13,9 @@ export interface Peliculas {
   productor?: string;
   coproductor?: string;
   agenteventas?: string;
-  protagonista?:string;
+  protagonista?: string;
   trailer?: string;
-  galeria?: Galer[]
+  galeria?: Galer[];
   poster: boolean;
   slug: string;
   dossier?: string;
@@ -27,7 +23,6 @@ export interface Peliculas {
   guion?: string;
   artistas?: string;
   companies?: string;
-  
 
   es?: Content;
   en?: Content;
@@ -36,7 +31,7 @@ export interface Peliculas {
 export interface Content {
   nombre: string;
   temas: string;
-  describe?:string;
+  describe?: string;
   tipo?: string;
   lblProductor?: string;
   lblCoproductor?: string;
@@ -62,28 +57,27 @@ export const contenidos: Peliculas[] = [
     slug: "colera",
     poster: true,
     galeria: [
-      {id:3, w:1200, h:675}, 
-{id:4, w:1200, h:675}, 
-{id:7, w:1200, h:675}, 
-{id:8, w:1200, h:675}, 
-{id:13, w:1200, h:675}, 
-{id:14, w:1200, h:675}, 
-{id:15, w:1200, h:675}, 
-{id:16, w:1200, h:675}, 
-{id:18, w:1200, h:675}, 
-{id:19, w:1200, h:675}, 
-{id:20, w:1200, h:675}, 
-{id:24, w:1200, h:675}, 
-{id:25, w:1200, h:675}, 
-{id:27, w:1200, h:675}, 
-{id:29, w:1200, h:675}, 
-{id:30, w:1200, h:675}, 
-{id:31, w:1200, h:675}, 
-{id:34, w:1200, h:675}, 
+      { id: 3, w: 1200, h: 675 },
+      { id: 4, w: 1200, h: 675 },
+      { id: 7, w: 1200, h: 675 },
+      { id: 8, w: 1200, h: 675 },
+      { id: 13, w: 1200, h: 675 },
+      { id: 14, w: 1200, h: 675 },
+      { id: 15, w: 1200, h: 675 },
+      { id: 16, w: 1200, h: 675 },
+      { id: 18, w: 1200, h: 675 },
+      { id: 19, w: 1200, h: 675 },
+      { id: 20, w: 1200, h: 675 },
+      { id: 24, w: 1200, h: 675 },
+      { id: 25, w: 1200, h: 675 },
+      { id: 27, w: 1200, h: 675 },
+      { id: 29, w: 1200, h: 675 },
+      { id: 30, w: 1200, h: 675 },
+      { id: 31, w: 1200, h: 675 },
+      { id: 34, w: 1200, h: 675 },
     ],
     dossier: "RAGE.pdf",
-    
-    
+
     es: {
       nombre: "Cólera morbo",
       temas: "Drama / Thriller / Historia real",
@@ -111,7 +105,7 @@ export const contenidos: Peliculas[] = [
       duracion: `100'`,
     },
     en: {
-      nombre: "Anger",
+      nombre: "Rage",
       temas: "Drama / Thriller / True Story",
       tipo: "Feature Film",
       sinopsis: `It has been twenty years since she saved a stranger’s life. Twenty years during which her teenage dreams were not fulfilled. Now Beatriz is nearly 40 and spends her days between the building site where she works, her grandma’s flower shop, and her nostalgia for the past. Digging through her memories, she finds an image in an old roll film that makes her question the futility of her life, and driven by an impulse, she embarks on a journey that will lead her to Cota, the stranger who she saved.<br />
@@ -141,29 +135,29 @@ export const contenidos: Peliculas[] = [
     poster: true,
     trailer: "416083962",
     galeria: [
-      {id:1, w:1600, h:675}, 
-{id:3, w:1200, h:675}, 
-{id:4, w:1200, h:675}, 
-{id:5, w:1200, h:675}, 
-{id:6, w:1200, h:675}, 
-{id:7, w:1200, h:675}, 
-{id:8, w:1200, h:675}, 
-{id:9, w:1200, h:675}, 
-{id:10, w:1200, h:675}, 
-{id:11, w:1200, h:675}, 
-{id:12, w:1200, h:675}, 
-{id:13, w:1200, h:675}, 
-{id:14, w:1200, h:675}, 
-{id:15, w:1200, h:675}, 
-{id:16, w:1200, h:675}, 
-{id:17, w:1200, h:675}, 
-{id:18, w:1200, h:675}, 
-{id:19, w:1200, h:675}, 
-{id:20, w:1200, h:675}, 
-{id:21, w:1200, h:675}, 
-{id:22, w:1200, h:675}, 
-{id:23, w:1200, h:675}, 
-{id:24, w:1200, h:675},
+      { id: 1, w: 1600, h: 675 },
+      { id: 3, w: 1200, h: 675 },
+      { id: 4, w: 1200, h: 675 },
+      { id: 5, w: 1200, h: 675 },
+      { id: 6, w: 1200, h: 675 },
+      { id: 7, w: 1200, h: 675 },
+      { id: 8, w: 1200, h: 675 },
+      { id: 9, w: 1200, h: 675 },
+      { id: 10, w: 1200, h: 675 },
+      { id: 11, w: 1200, h: 675 },
+      { id: 12, w: 1200, h: 675 },
+      { id: 13, w: 1200, h: 675 },
+      { id: 14, w: 1200, h: 675 },
+      { id: 15, w: 1200, h: 675 },
+      { id: 16, w: 1200, h: 675 },
+      { id: 17, w: 1200, h: 675 },
+      { id: 18, w: 1200, h: 675 },
+      { id: 19, w: 1200, h: 675 },
+      { id: 20, w: 1200, h: 675 },
+      { id: 21, w: 1200, h: 675 },
+      { id: 22, w: 1200, h: 675 },
+      { id: 23, w: 1200, h: 675 },
+      { id: 24, w: 1200, h: 675 },
     ],
     director: "Alfonso Acosta",
     productor: "Carolina Mosquera",
@@ -211,15 +205,17 @@ export const contenidos: Peliculas[] = [
     slug: "duermevela",
     poster: true,
     cast: "Dominique Forbes",
-    galeria: [{id:1, w:1600, h:675}, 
-      {id:2, w:1600, h:675}, 
-      {id:3, w:1600, h:675}, 
-      {id:4, w:1600, h:675}, 
-      {id:5, w:1600, h:675}, 
-      {id:6, w:1600, h:675}, 
-      {id:7, w:1600, h:675}, 
-      {id:8, w:1600, h:675}, 
-      {id:9, w:1600, h:675}, ],
+    galeria: [
+      { id: 1, w: 1600, h: 675 },
+      { id: 2, w: 1600, h: 675 },
+      { id: 3, w: 1600, h: 675 },
+      { id: 4, w: 1600, h: 675 },
+      { id: 5, w: 1600, h: 675 },
+      { id: 6, w: 1600, h: 675 },
+      { id: 7, w: 1600, h: 675 },
+      { id: 8, w: 1600, h: 675 },
+      { id: 9, w: 1600, h: 675 },
+    ],
     director: "Alfonso Acosta",
     productor: "Carolina Mosquera",
     es: {
@@ -259,24 +255,26 @@ export const contenidos: Peliculas[] = [
     slug: "resquicio",
     agenteventas: "E-One",
     poster: true,
-    galeria: [{id:1, w:1200, h:815}, 
-      {id:2, w:1200, h:417}, 
-      {id:3, w:1200, h:696}, 
-      {id:4, w:1200, h:733}, 
-      {id:5, w:707, h:1200}, 
-      {id:6, w:1200, h:672}, 
-      {id:7, w:976, h:1200}, 
-      {id:8, w:1200, h:571}, 
-      {id:9, w:733, h:1200}, 
-      {id:10, w:1200, h:551}, 
-      {id:11, w:772, h:1200}, 
-      {id:12, w:1200, h:675}, 
-      {id:13, w:800, h:1200}, 
-      {id:14, w:687, h:1200}, 
-      {id:15, w:756, h:1200}, 
-      {id:16, w:800, h:1200}, 
-      {id:17, w:1200, h:506}, 
-      {id:18, w:848, h:1200},],
+    galeria: [
+      { id: 1, w: 1200, h: 815 },
+      { id: 2, w: 1200, h: 417 },
+      { id: 3, w: 1200, h: 696 },
+      { id: 4, w: 1200, h: 733 },
+      { id: 5, w: 707, h: 1200 },
+      { id: 6, w: 1200, h: 672 },
+      { id: 7, w: 976, h: 1200 },
+      { id: 8, w: 1200, h: 571 },
+      { id: 9, w: 733, h: 1200 },
+      { id: 10, w: 1200, h: 551 },
+      { id: 11, w: 772, h: 1200 },
+      { id: 12, w: 1200, h: 675 },
+      { id: 13, w: 800, h: 1200 },
+      { id: 14, w: 687, h: 1200 },
+      { id: 15, w: 756, h: 1200 },
+      { id: 16, w: 800, h: 1200 },
+      { id: 17, w: 1200, h: 506 },
+      { id: 18, w: 848, h: 1200 },
+    ],
     trailer: "47170131",
     director: "Alfonso Acosta",
     productor: "Carolina Mosquera, Ricardo Cantor",
@@ -378,7 +376,6 @@ export const contenidos: Peliculas[] = [
     poster: true,
     ideaoriginal: "Carolina Mosquera",
     director: "Nadia Granados",
-    
 
     es: {
       nombre: "Señoritas",
@@ -489,12 +486,12 @@ export const contenidos: Peliculas[] = [
     protagonista: "Juana Soto",
     trailer: "831368378",
     galeria: [
-      {id:1, w:960, h:540}, 
-{id:2, w:960, h:540}, 
-{id:3, w:960, h:540}, 
-{id:4, w:960, h:540}, 
-{id:5, w:960, h:540}, 
-{id:6, w:960, h:540}, 
+      { id: 1, w: 960, h: 540 },
+      { id: 2, w: 960, h: 540 },
+      { id: 3, w: 960, h: 540 },
+      { id: 4, w: 960, h: 540 },
+      { id: 5, w: 960, h: 540 },
+      { id: 6, w: 960, h: 540 },
     ],
     dossier: "KAROL-MINI-DOSSIER.pdf",
 
@@ -505,8 +502,7 @@ export const contenidos: Peliculas[] = [
       tipo: "Cortometraje",
       sinopsis: `La fiesta de cumpleaños de Karol (8), una niña convencida de que es un vampiro, se convierte en un caos debido a las peleas con sus padres. Un acto de rebeldía, cortarse ella sola su preciosa melena, será un punto de ruptura que volverá a unir a la familia.
       `,
-      premios:
-        `
+      premios: `
         <p>Ganador de estímulo Realización de cortometraje infantil del FDC 2021</p>
 <p>Premier mundial: NYICFF - NEW YORK INTERNATIONAL CHILDREN´S FILM FESTIVAL 2024 UNITED STATES</p>
 		<p>Premio del público edades de 10+</p>
@@ -515,8 +511,7 @@ export const contenidos: Peliculas[] = [
 		INDIA & EMIRATOS ARABES UNIDOS</p>
 <p>31º FESTIVAL INTERNACIONAL DE CINE DE VALDIVIA (FICVALDIVIA) 2024</p>
 `,
-        duracion: `12'34''`,
-        
+      duracion: `12'34''`,
     },
     en: {
       lblProtagonista: "Star:",
@@ -530,15 +525,14 @@ export const contenidos: Peliculas[] = [
       It gets dark and things calm down. Karol and her cousin watch the adults from afar being happy in their clumsy dance. The kid wants to know what it's like to be her. "Stand upside down and look at the world upside down."<br /><br />
       The cousin does and understands everything.
       `, */
-      premios:
-        `<p>World Premier:	NYICFF - NEW YORK INTERNATIONAL CHILDREN´S FILM FESTIVAL 2024		UNITED STATES</p>
+      premios: `<p>World Premier:	NYICFF - NEW YORK INTERNATIONAL CHILDREN´S FILM FESTIVAL 2024		UNITED STATES</p>
 		<p>Audience Award, ages 10+</p>
 		<p>Audience Award, ages 18+</p>
 <p>Asian Premier: 	SCIFF - SCHOOL CINEMA INTERNATIONAL FILM FESTIVAL 2024
 		INDIA & UNITED ARAB EMIRATES</p>
 <p>31º FESTIVAL INTERNACIONAL DE CINE DE VALDIVIA (FICVALDIVIA)2024</p>
 `,
-        duracion: `12'34''`,
+      duracion: `12'34''`,
     },
   },
   {
@@ -625,7 +619,7 @@ export const contenidos: Peliculas[] = [
       `,
       lblCoproductor: "Coproductor",
       lblProductor: "Productor",
-      premios: "GANADORA CONVOCATORIA AUDIOVISUAL MINTIC 2024"
+      premios: "GANADORA CONVOCATORIA AUDIOVISUAL MINTIC 2024",
     },
     en: {
       nombre: "Antología de lo invisible",
@@ -635,7 +629,7 @@ export const contenidos: Peliculas[] = [
       `,
       lblCoproductor: "Co-Producer",
       lblProductor: "Producer",
-      premios: "GANADORA CONVOCATORIA AUDIOVISUAL MINTIC 2024"
+      premios: "GANADORA CONVOCATORIA AUDIOVISUAL MINTIC 2024",
     },
   },
   {
@@ -649,10 +643,10 @@ export const contenidos: Peliculas[] = [
     productor: "Carolina Mosquera",
     artistas: "María Leubro, Zulima Ochoa, Laura Campaz, Lucía Vargas",
     galeria: [
-      {id:1, w:960, h:540}, 
-      {id:2, w:960, h:540}, 
-      {id:3, w:960, h:540}, 
-      {id:4, w:960, h:540}, 
+      { id: 1, w: 960, h: 540 },
+      { id: 2, w: 960, h: 540 },
+      { id: 3, w: 960, h: 540 },
+      { id: 4, w: 960, h: 540 },
     ],
 
     es: {
@@ -702,44 +696,43 @@ export const contenidos: Peliculas[] = [
 ];
 
 export interface Personas {
-  nombres: string,
+  nombres: string;
   rol: {
-    es: string,
-    en: string
-  },
+    es: string;
+    en: string;
+  };
   descripcion: {
-    es: string,
-    en: string
-  }, 
-  img: string
-
+    es: string;
+    en: string;
+  };
+  img: string;
 }
 
-export const personas:Personas[] = [
+export const personas: Personas[] = [
   {
     nombres: "Alfonso Acosta",
-    rol: {  es: 'DIRECTOR / GUIONISTA / MONTAJISTA / DOCENTE', en: 'DIRECTOR / SCRIPTWRITER / EDITOR ' }, 
+    rol: {
+      es: "DIRECTOR / GUIONISTA / MONTAJISTA / DOCENTE",
+      en: "DIRECTOR / SCRIPTWRITER / EDITOR ",
+    },
     descripcion: {
       es: `<p>Director, guionista y montajista colombiano. Estudió cine en la Universidad Nacional de Colombia. Su primer largometraje, El resquicio (2012) se estrenó en el Festival Internacional de Cine de Busán y su agente de ventas es E One de Canadá. Director y guionista de la película Cólera morbo (2021). Director de Laika en las Estrellas (2020) una serie juvenil y animalista, y el cortometraje infantil Duermevela (2019).</p>
   
   <p>Sus historias están envueltas por un halo de melancolía con personajes particulares con mundos internos llenos de matices. Así como disfruta crear historias que navegan entre géneros como el drama, terror psicológico y el misterio, así mismo disfruta crear para público infantil y juvenil. Docente con más de diez años de experiencia.</p>`,
-      en: `Colombian director, screenwriter and editor. He studied filmmaking at National University of Colombia. His first feature film, The Crack (2012) was released at the Busan International Film Festival and its sales agent is E One from Canada. Director and scriptwriter of the film Rage (2020). Director of Laika in the Stars (2020) a TV series, and the shortfilm for children Doze (2019).`
+      en: `Colombian director, screenwriter and editor. He studied filmmaking at National University of Colombia. His first feature film, The Crack (2012) was released at the Busan International Film Festival and its sales agent is E One from Canada. Director and scriptwriter of the film Rage (2020). Director of Laika in the Stars (2020) a TV series, and the shortfilm for children Doze (2019).`,
     },
-    img: '/alfonso.png'
+    img: "/alfonso.png",
   },
   {
     nombres: "Carolina Mosquera",
     rol: {
-      es: 'PRODUCTORA CREATIVA / DOCENTE',
-      en: 'Producer'
+      es: "PRODUCTORA CREATIVA / DOCENTE",
+      en: "Producer",
     },
     descripcion: {
       es: `Productora colombiana involucrada creativamente en todos los procesos de producción de sus proyectos. Es Realizadora de cine y televisión de la Universidad Nacional de Colombia, promoción 2007. Productora EAVE - Puentes promoción 2015 - 2016. Becaria Torino Film Lab – Idartes 2019. Ganadora de múltiples premios del Fondo para el Desarrollo Cinematográfico y del Programa Nacional de Estímulos del Ministerio de Cultura. Actualmente adelanta estudios en la Maestría en Estética e Historia del arte en la universidad Jorge Tadeo Lozano.`,
-      en: `Colombian producer. EAVE – PUENTES promotion 2015/2016. Graduated from Film School of the Universidad Nacional de Colombia. She´s a producer involved creatively in all processes of production for her projects. Producer of the feature film The Crack (2012, 101 min.) premiered at Busan International Film Festival. Producer, scriptwriter and lead actress of Rage (2020, 100 min).`
+      en: `Colombian producer. EAVE – PUENTES promotion 2015/2016. Graduated from Film School of the Universidad Nacional de Colombia. She´s a producer involved creatively in all processes of production for her projects. Producer of the feature film The Crack (2012, 101 min.) premiered at Busan International Film Festival. Producer, scriptwriter and lead actress of Rage (2020, 100 min).`,
     },
-    img: '/carolina.png'
+    img: "/carolina.png",
   },
-  
-
-]
-
+];
